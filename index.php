@@ -9,5 +9,9 @@ $app = new Slim();
 
 $app->config('debug',true);
 
-$Mensagem = new Mensagem();
-echo $Mensagem->geraMensagem("15/11/2021");
+$app->get('/', function (){
+    $Mensagem = new Mensagem();
+    echo $Mensagem->geraMensagem("15/11/2021");
+});
+
+$app->run();
