@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerador de Mensagens</title>
+</head>
+<body>
+<p id="Msg">{$sMensagem}</p>
+<form class="form" id="formData" action="/mensagem" method="post">
+    <label for="Data">Digite a data</label>
+    <input type="text" name="Data" id="Data" placeholder="Digite a data">
+    <input type="submit" value="Enviar">
+</form>
+</body>
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    jQuery(document).submit(function(e){
+        let form = jQuery(e.target);
+        if(form.is("#formData")){
+            e.preventDefault();
+            $.ajax({
+                type: "POST",
+                datatype: "html",
+                url: form.attr('action'),
+                data: form.serialize(),
+                error: function(oXMLRequest,sErrorType){
+                    console.log(form.attr('action'));
+                    console.log(oXMLRequest.responseText);
+                    console.log(oXMLRequest.status+' , '+sErrorType);
+                },
+                success: function(dados){
+                    $("#Msg").text(dados);
+                }
+            });
+        }
+    });
+</script>
+</html>

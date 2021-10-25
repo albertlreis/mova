@@ -18,12 +18,12 @@ class Mensagem {
     public function feriado($diaMes)
     {
         $vFeriado = [
-            "1/1" => "Ano Novo",
-            "21/4" => "Tiradentes",
-            "1/5" => "Dia do Trabalho",
-            "7/9" => "Indepência do Brasil",
+            "01/01" => "Ano Novo",
+            "21/04" => "Tiradentes",
+            "01/05" => "Dia do Trabalho",
+            "07/09" => "Indepência do Brasil",
             "12/10" => "Nossa Senhora Aparecida",
-            "2/11" => "Finados",
+            "02/11" => "Finados",
             "15/11" => "Proclamação da República",
             "25/12" => "Natal"
         ];
