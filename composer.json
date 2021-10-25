@@ -1,0 +1,18 @@
+{
+    "name": "albertlreis/mova",
+    "description": "",
+    "require": {
+        "slim/slim": "2.0"
+    },
+    "authors": [
+        {
+            "name": "Albert Reis",
+            "email": "albertlreis@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Mova\\": "vendor\\mova\\src"
+        }
+    }
+}
