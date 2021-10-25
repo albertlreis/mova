@@ -24,24 +24,33 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => 'c65d55322b1f3766fe9bd06793d4915610ada4d3',
     'name' => 'albertlreis/mova',
   ),
   'versions' => 
   array (
     'albertlreis/mova' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => 'c65d55322b1f3766fe9bd06793d4915610ada4d3',
+    ),
+    'rain/raintpl' => 
+    array (
+      'pretty_version' => '3.0.0',
+      'version' => '3.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '5bfdf4602b8adb0e80b222fa29ac559aa9c06abf',
     ),
     'slim/slim' => 
     array (
